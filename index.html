@@ -2,8 +2,28 @@
     <head>
         <title>Calendario Black</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
     </head>
 <body>
+    <div class="calendar"></div>
+        <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+        <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.umd.min.js"></script>
+        <script src="https://unpkg.com/js-year-calendar@latest/locales/js-year-calendar.pt.js"></script>
+        
+        <script> 
+        
+        new Calendar('.calendar', {
+            language: 'pt'
+        })
 
+        document.querySelector('.calendar').addEventListener('clickDay', function(e) {
+        alert('Clicou em ' + e.date.toString());
+        })
+
+        document.querySelector('.calendar').addEventListener('selectRange', function(e) {
+        console.log("Select the range: " + e.startDate + " - " + e.endDate);
+        })
+       
+        </script>
 </body>
 </html>

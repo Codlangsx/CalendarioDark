@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@200&family=Share+Tech+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body
+{
+    background-color: black;
+    color: green;
+}
+
+.calendar
+{
+   padding: 20px 40px;
+}
+
+.months-container
+{
+    justify-content: center;
+    gap:40px;
+}
+
+.calendar .months-container .month-container
+{
+    background-color: #191919;
+    padding: 20px;
+    min-width: 280px;
+    box-shadow: 15px 15px 40px rgba(5, 32, 2, 0.6);
+}
+
+.calendar table.month th.month-title
+{
+    color: rgb(8, 255, 111);
+    font-size: 1.9em;
+    font-weight: 200;
+    font-family: 'Electrolize', sans-serif;
+}
+
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child
+{
+    color: rgb(255, 255, 255);
+}
+
+.calendar table.month td.day .day-content
+{
+    padding: 6px 8px;
+}
+
+.calendar table.month th.day-header
+{
+    color: rgb(30, 255, 30);
+}
+
+.month tr td
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    color:rgb(119, 119, 119);
+}
+
+table.month td.day .day-content:hover
+{
+    background: black;
+    color: green;
+}
+
+
