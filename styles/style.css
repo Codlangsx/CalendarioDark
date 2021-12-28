@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@200&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@200&family=Pushster&family=Share+Tech+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -71,5 +73,33 @@ table.month td.day .day-content:hover
     background: black;
     color: green;
 }
+
+.calendar .calendar-header
+{
+    border: none!important;
+}
+
+.calendar .calendar-header table th:hover
+{
+    background: transparent!important;
+}
+
+.calendar .calendar-header  .year-title
+{
+    font-size: 4em;
+    font-family: 'Pushster', cursive;
+}
+
+.calendar .calendar-header .year-neighbor
+{
+    font-size: 2.25em;
+}
+
+
+.calendar .calendar-header .year-neighbor2
+{
+    font-size: 1em;
+}
+
 
 
